@@ -7,13 +7,10 @@ public class DotweenTest : MonoBehaviour
 
     private void Start() 
     {
-        Tween tween = this.transform.DOMove(destination.position, 3, false)
+        Tween tween = this.transform.DOPath(new Vector3[] {destination.position, transform.position}, 5)
             .SetEase(Ease.Unset);
 
-        tween.OnComplete(delegate()
-                {
-                    tween.Restart();
-                });
+        tween.OnComplete(() => tween.Restart());
     }
 }
 
