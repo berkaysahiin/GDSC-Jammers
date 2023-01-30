@@ -5,12 +5,13 @@ public class DotweenTest : MonoBehaviour
 {
     public Transform destination;
 
-    private void Start() 
+    private void Start()
     {
-        Tween tween = this.transform.DOPath(new Vector3[] {destination.position, transform.position}, 5)
-            .SetEase(Ease.Unset);
+        Vector3[] Path = new Vector3[]{destination.position, this.transform.position};
+        
+        //transform.DOMove(destination.position, 4.0f, false);
 
-        tween.OnComplete(() => tween.Restart());
+        transform.DOPath(Path, 4.0f);
     }
 }
 
