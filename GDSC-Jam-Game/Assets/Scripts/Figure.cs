@@ -11,11 +11,11 @@ public class Figure : MonoBehaviour
         this._info = info;
     }
 
-    public void Path()
+    public void Path(Vector3 target, float tripTime)
     {
         Debug.Log("Path started");
         _onPath = DOTween.Sequence()
-            .Append(this.transform.DOMove(_info.target, _info.tripTime).SetEase(Ease.Linear))
+            .Append(this.transform.DOMove(target, tripTime).SetEase(Ease.Unset))
             .AppendInterval(1);
     }
 
@@ -24,19 +24,9 @@ public class Figure : MonoBehaviour
         return this._info.type;
     }
 
-    public void SetTarget(Vector3 target)
-    {
-        this._info.target = target;
-    }
-
     public void PausePath()
     {
         _onPath.Pause();
-    }
-
-    public void ContiniuePath()
-    {
-        _onPath.Play();
     }
 
     public void OnMouseDown() 

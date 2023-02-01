@@ -10,6 +10,9 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     private Queue<string> sentences;
+
+    public bool isOpen;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -29,11 +32,12 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0)
+        if (Finished())
         {
             EndDialogue();
             return;
         }
+
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -48,8 +52,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
     void EndDialogue()
-    {
+    {   
         animator.SetBool("isOpen", false);
         Debug.Log("End of conversation");
+    }
+
+    public bool Finished() 
+    {
+        return sentences.Count == 0;
     }
 }

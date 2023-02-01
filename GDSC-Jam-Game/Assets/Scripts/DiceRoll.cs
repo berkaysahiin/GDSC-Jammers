@@ -6,7 +6,6 @@ public class Dice{
     public int value;
     public Dice(){
         this.value = Random.Range(0,6);
-        Debug.Log("Dice created with value: " + (value + 1));
     }
 }
 public class DiceRoll : MonoBehaviour
