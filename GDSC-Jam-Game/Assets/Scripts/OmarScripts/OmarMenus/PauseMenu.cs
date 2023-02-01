@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -10,9 +12,15 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject optionsPanelUI;
-
+   
+    //[SerializeField]private TweenUi _tweenUi;
+    //[SerializeField] private RectTransform[] buttons = new RectTransform[3];
+    //[SerializeField] private float revealDuration = 2f;
+    //[SerializeField] private GameObject target;
+    //[SerializeField] private RectTransform button;
     private void Start()
     {
+        optionsPanelUI.SetActive(false);
         pauseMenuUI.SetActive(false);
     }
 
@@ -20,9 +28,12 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            //_tweenUi.slidingButton();
+            //slidingButton();
             if (GameIsPaused)
             {
-                Resume();
+                Resume(); 
+                optionsPanelUI.SetActive(false);
             }
             else
             {
@@ -49,10 +60,14 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene("OmarMainMenu");
+        
     }
 
-    public void QuitGame()
+    public void slidingButton()
     {
-        
+        //foreach (RectTransform button in buttons)
+        //{
+            //button.DOAnchorPosX(target.transform.position.x, revealDuration).From();
+        //}
     }
 }
