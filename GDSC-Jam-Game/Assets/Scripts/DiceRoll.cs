@@ -3,37 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Dice{
-    public int sides;
     public int value;
-    public Dice(int sides){
-        this.sides = sides;
-    }
-    public int Roll(){
-        value = Random.Range(1, sides + 1);
-        return value;
+    public Dice(){
+        this.value = Random.Range(0,6);
+        Debug.Log("Dice created with value: " + (value + 1));
     }
 }
-
-public class DiceRoll
+public class DiceRoll : MonoBehaviour
 {
-    public List<Dice> dice;
-    public DiceRoll(){
-        dice = new List<Dice>();
-    }
-    public void AddDice(int sides){
-        dice.Add(new Dice(sides));
-    }
-    public void Roll(){
-        for(int i = 0; i < dice.Count; i++){
-            dice[i].Roll();
-        }
+    public Animator animator;
+    public int result;
+    void Awake() {
+        animator = GetComponent<Animator>();
     }
 
-    public int TotalValue(){
-        int total = 0;
-        for(int i = 0; i < dice.Count; i++){
-            total += dice[i].value;
-        }
-        return total;
+    public int Roll()
+    {    
+        Dice dice = new Dice();
+        animator.SetTrigger("roll");
+        animator.SetInteger("index", dice.value);
+        animator.SetTrigger("roll2");
+        return dice.value+1;
     }
 }
