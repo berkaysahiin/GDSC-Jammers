@@ -5,22 +5,44 @@ using TMPro;
 
 public class DiceRollTest : MonoBehaviour
 {
-
-    [SerializeField] private DiceRoll[] dices;
+    private DiceRoll[] _dices;
     [SerializeField] private TMP_Text diceTotal;
 
+    private void Awake() 
+    {
+        _dices = GetComponentsInChildren<DiceRoll>();
+    }
+    
+    private void Start() 
+    {
+        SetDicesActive(false);
+    }
 
-    public void Roll(){
+    private int Roll(){
+        diceTotal.gameObject.SetActive(true);
+        SetDicesActive(true);
+
         int sum = 0;
-        foreach(DiceRoll dice in dices){
+        foreach(DiceRoll dice in _dices){
             sum += dice.Roll();
         }
         //totalvalue animasyondan önce display ediliyor
-        StartCoroutine(Wait());
         diceTotal.text = sum.ToString();
-        
+
+        return sum;
     }
-    IEnumerator Wait(){
-        yield return new WaitForSecondsRealtime(3);
+
+    private void SetDicesActive(bool flag)
+    {
+        foreach(var dice in _dices) 
+        {
+            dice.gameObject.SetActive(flag);
+        }
+
+    }
+    
+    public void Trigger() 
+    {
+        this.Roll();
     }
 }

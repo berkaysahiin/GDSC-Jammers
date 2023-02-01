@@ -4,15 +4,13 @@ using UnityEngine;
 public struct FigureInfo
 {
     public Vector3 spawnPosition;
-    public Vector3 target;
-    public float tripTime;
+    public float power;
     public FigureType type;
 
-    public FigureInfo(Vector3 spawn, Vector3 target, float tripTime, FigureType type) 
+    public FigureInfo(Vector3 spawn, FigureType type, float power) 
     {
         this.spawnPosition = spawn;
-        this.target = target;
-        this.tripTime = tripTime;
+        this.power = power;
         this.type = type;
     }
 }

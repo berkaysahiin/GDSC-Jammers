@@ -4,11 +4,33 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-   public Dialogue dialogue;
+   public static DialogueTrigger instance = null;
 
-   public void TriggerDialogue()
+   private DialogueManager dialogueManager;
+
+   private DialogueTrigger() {}
+
+
+   public void Awake() 
    {
-      FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+      dialogueManager = FindObjectOfType<DialogueManager>();
+
+      if(instance is null) {
+         instance = this;
+      }
+      else if(instance != this) {
+         Destroy(this.gameObject);
+      }
+   }
+   
+   public void TriggerDialogue(Dialogue dialogue)
+   {
+      dialogueManager.StartDialogue(dialogue);
+   }
+
+   public bool IsOpen()
+   {
+      return dialogueManager.isOpen;
    }
 
 }

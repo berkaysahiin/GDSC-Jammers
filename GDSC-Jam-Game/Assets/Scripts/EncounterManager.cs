@@ -1,63 +1,37 @@
 using UnityEngine;
-using DG.Tweening;
+using System.Collections.Generic;
+using System.Collections;
+using System.Threading.Tasks;
 
 public class EncounterManager : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other) {
-        var other_figure = other.GetComponent<Figure>();
-        if(other is null) return;
+    private DialogueTrigger dialogueTrigger;
+    public DiceRollTest diceRollTest;
+    private Dictionary<FigureType, Dialogue>  dialogue = new Dictionary<FigureType, Dialogue>();
+    private EncounterManager() {}
+    public static EncounterManager instance = null;
 
-        var this_figure = this.GetComponent<Figure>();
-
-        Sequence sequence = DOTween.Sequence();
-
-        switch(this_figure.GetFigureType())
-        {
-            case FigureType.Player:
-            {
-                switch(other_figure.GetFigureType()) 
-                {
-                    case FigureType.EnemyBird:
-                    {
-                        this_figure.PausePath();
-                        other_figure.PausePath();
-                        print("player + enemy bird");
-                        break;
-                    }
-                    case FigureType.Soldier:
-                    {
-                        this_figure.PausePath();
-                        other_figure.PausePath();
-                        print("player + soldier");
-                        break;
-                    }
-                    case FigureType.Castle:
-                    {
-                        this_figure.PausePath();
-                        other_figure.PausePath();
-                        print("player + castle");
-                        break;
-                    }
-
-                }
-                break;
-            }
-            case FigureType.EnemyBird:
-            {
-                switch(other_figure.GetFigureType())
-                {
-                    case FigureType.Castle:
-                    {
-                        this_figure.PausePath();
-                        other_figure.PausePath();
-                        print("Enemy bird + castle");
-                        break;
-                    }
-                }
-                break;
-            }
+    private void Awake()
+    {
+        if(instance is null) {
+            instance = this;
         }
+        else if(instance != this) {
+            Destroy(this.gameObject);
+        }
+    }
 
-        sequence.Play();
+    private void Start() 
+    {
+        dialogueTrigger = FindObjectOfType<DialogueTrigger>();
+        diceRollTest = FindObjectOfType<DiceRollTest>();
+    }
+
+    public void Handle(Collider2D other, GameObject caller) {
+        var other_figure = other.GetComponent<Figure>();
+        var callerFigure = caller.GetComponent<Figure>();
+
+        InteractionManager.instance.SignalPlayerStop();
+        this.dialogueTrigger.TriggerDialogue(new Dialogue(new string[] {"hello"}));
     }
 }

@@ -10,9 +10,18 @@ public class FigureFactory : MonoBehaviour
     [SerializeField] private GameObject _player;
 
     private Dictionary<FigureType, GameObject> _prefabs = new Dictionary<FigureType, GameObject>();
+    private FigureFactory() {}
+    public static FigureFactory instance = null;
 
     public void Awake()
     {
+        if(instance is null) {
+            instance = this;
+        }
+        else if(instance != this) {
+            Destroy(this.gameObject);
+        }
+
         _prefabs.Add(FigureType.EnemyBird, _bird);
         _prefabs.Add(FigureType.Castle, _castle);
         _prefabs.Add(FigureType.Soldier, _soldier);
@@ -23,41 +32,10 @@ public class FigureFactory : MonoBehaviour
     public GameObject InstantiateFigure(FigureInfo info)
     {
         var obj = Instantiate(_prefabs[info.type], info.spawnPosition, Quaternion.identity);
-        obj.AddComponent<Figure>();
+        obj.AddComponent<Figure>().Construct(info);
         obj.AddComponent<BoxCollider2D>().isTrigger = true;
-        obj.AddComponent<EncounterManager>();
+        obj.AddComponent<Encounter>();
         obj.AddComponent<Rigidbody2D>().isKinematic = true;
-        obj.SendMessage("Construct", info);
         return obj;
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            var info = new FigureInfo(Vector3.zero, new Vector3(8,3,0), 5, FigureType.Castle);
-            var clone = InstantiateFigure(info);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            var info = new FigureInfo(Vector3.zero, new Vector3(8,3,0), 5, FigureType.EnemyBird);
-            var clone = InstantiateFigure(info);
-            clone.SendMessage("Path");
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            var info = new FigureInfo(Vector3.zero, new Vector3(8,3,0), 2, FigureType.Player);
-            var clone = InstantiateFigure(info);
-        }
-
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            var info = new FigureInfo(Vector3.zero, new Vector3(8,3,0), 5, FigureType.Soldier);
-            var clone = InstantiateFigure(info);
-        }
-
-    }
-
 }
