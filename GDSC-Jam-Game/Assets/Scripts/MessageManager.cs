@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class MessageManager : MonoBehaviour
 {
-    public string newText{get; private set; }
+    public string newText {get; private set; }
     public Button button;
     
 

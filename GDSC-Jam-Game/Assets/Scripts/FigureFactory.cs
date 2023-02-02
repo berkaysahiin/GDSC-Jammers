@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class FigureFactory : MonoBehaviour
 {
@@ -36,6 +37,17 @@ public class FigureFactory : MonoBehaviour
         obj.AddComponent<BoxCollider2D>().isTrigger = true;
         obj.AddComponent<Encounter>();
         obj.AddComponent<Rigidbody2D>().isKinematic = true;
+
+        if(info.type == FigureType.Player)
+        {
+            obj.AddComponent<Player>();
+        }
+
+        if(info.type == FigureType.EnemyBird)
+        {
+            obj.AddComponent<Message>();
+        }
+
         return obj;
     }
 }
