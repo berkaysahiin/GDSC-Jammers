@@ -54,10 +54,7 @@ public class InteractionManager : MonoBehaviour
     public void ReleasePlayerStop()
     {
         if(selectedFigure is null) return; 
-
-        if(selectedFigure.GetFigureType() != FigureType.EnemyBird) {
-            _allowed = true;
-        }
+        _allowed = true;
     }
 
     public void RelasePlayerStop_s()
