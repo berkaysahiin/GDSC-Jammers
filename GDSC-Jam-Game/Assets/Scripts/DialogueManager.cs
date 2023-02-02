@@ -11,8 +11,6 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     private Queue<string> sentences;
 
-    public bool isOpen;
-
     void Start()
     {
         sentences = new Queue<string>();
@@ -55,6 +53,9 @@ public class DialogueManager : MonoBehaviour
     {   
         animator.SetBool("isOpen", false);
         Debug.Log("End of conversation");
+
+        EncounterManager.instance.StartCoroutine("InvokeRoll");
+        InteractionManager.instance.ReleasePlayerStop();
     }
 
     public bool Finished() 

@@ -27,10 +27,4 @@ public class DialogueTrigger : MonoBehaviour
    {
       dialogueManager.StartDialogue(dialogue);
    }
-
-   public bool IsOpen()
-   {
-      return dialogueManager.isOpen;
-   }
-
 }

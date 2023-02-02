@@ -9,6 +9,8 @@ public class InteractionManager : MonoBehaviour
     private InteractionManager() {}
     private Figure selectedFigure = null;
     private Figure player = null;
+    private bool _allowed = true;
+    public bool allowed => _allowed;
 
     private void Awake() 
     {
@@ -27,8 +29,11 @@ public class InteractionManager : MonoBehaviour
 
     public void OnFigureSelected(Figure figure) 
     {
+        if(!_allowed) return;
+
         selectedFigure = figure;
         StartCoroutine("Follow");
+        selectedFigure.PausePath();
     }
 
     IEnumerator Follow()
@@ -43,5 +48,21 @@ public class InteractionManager : MonoBehaviour
     {
         StopCoroutine("Follow");
         player.PausePath();
+        _allowed = false;
     }
+
+    public void ReleasePlayerStop()
+    {
+        if(selectedFigure is null) return; 
+
+        if(selectedFigure.GetFigureType() != FigureType.EnemyBird) {
+            _allowed = true;
+        }
+    }
+
+    public void RelasePlayerStop_s()
+    {
+        _allowed = true;
+    }
+    
 }
