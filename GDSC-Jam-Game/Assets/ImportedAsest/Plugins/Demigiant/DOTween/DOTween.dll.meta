@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 guid: a811bde74b26b53498b4f6d872b09b6d
 PluginImporter:
+<<<<<<< HEAD:GDSC-Jam-Game/Assets/ImportedAsest/Plugins/Demigiant/DOTween/DOTween.dll.meta
   externalObjects: {}
   serializedVersion: 2
   iconMap: {}
@@ -25,6 +26,21 @@ PluginImporter:
   - first:
       Windows Store Apps: WindowsStoreApps
     second:
+=======
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  platformData:
+    Any:
+      enabled: 1
+      settings: {}
+    Editor:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+    WindowsStoreApps:
+>>>>>>> 2b2b7786b58e63f3925bbd0463d9a576f91d8613:GDSC-Jam-Game/Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta
       enabled: 0
       settings:
         CPU: AnyCPU

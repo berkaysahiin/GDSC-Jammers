@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6e558a7f-bfb2-4695-aa12-6328a62f8711" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Animations/Dice.controller" afterDir="false" />
@@ -171,6 +172,19 @@
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
+=======
+    <list default="true" id="03666fc4-1492-4060-8d78-c2155c0b7be5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.GDSC-Jam-Game/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.GDSC-Jam-Game/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Berk.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Berk.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MessageChanger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MessageChanger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MessageManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MessageManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDSC-Jam-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDSC-Jam-Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+>>>>>>> 2b2b7786b58e63f3925bbd0463d9a576f91d8613
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
@@ -183,7 +197,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="2L3wmmg8TpVi0YnCaUXp4fPRZvU" />
+=======
+  <component name="ProjectId" id="2L6wiLkcH5Mf5M1eb08cyEsiynx" />
+>>>>>>> 2b2b7786b58e63f3925bbd0463d9a576f91d8613
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -195,7 +213,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="rider.run.widget.enabled.cache" value="false" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+=======
+>>>>>>> 2b2b7786b58e63f3925bbd0463d9a576f91d8613
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -223,6 +244,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="6e558a7f-bfb2-4695-aa12-6328a62f8711" name="Changes" comment="" />
       <created>1675113272512</created>
       <option name="number" value="Default" />
@@ -238,6 +260,15 @@
       <workItem from="1675207044292" duration="5124000" />
       <workItem from="1675247752781" duration="9382000" />
       <workItem from="1675280167681" duration="7346000" />
+=======
+      <changelist id="03666fc4-1492-4060-8d78-c2155c0b7be5" name="Changes" comment="" />
+      <created>1675205006002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675205006002</updated>
+      <workItem from="1675205059731" duration="7874000" />
+      <workItem from="1675252076117" duration="13124000" />
+>>>>>>> 2b2b7786b58e63f3925bbd0463d9a576f91d8613
     </task>
     <servers />
   </component>
@@ -247,6 +278,7 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -258,6 +290,8 @@
       </map>
     </option>
   </component>
+=======
+>>>>>>> 2b2b7786b58e63f3925bbd0463d9a576f91d8613
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
