@@ -122,8 +122,8 @@ public class EncounterManager : MonoBehaviour
             if(otherFigure.GetFigureType() == FigureType.EnemyBird && callerFigure.GetFigureType() == FigureType.Player)
             {
                 print(otherFigure.GetFigureType());
-                this.messageChanger.gameObject.SetActive(true);
                 InteractionManager.instance.SignalPlayerStop();
+                this.messageChanger.gameObject.SetActive(true);
             }
         }
     }
@@ -133,8 +133,8 @@ public class EncounterManager : MonoBehaviour
     {
         InteractionManager.instance.RelasePlayerStop_s();
         otherFigure.GetComponent<Message>().changed = true;
+        otherFigure.ContinuePath();
         Debug.Log("message changed");
         this.messageChanger.gameObject.SetActive(false);
-        otherFigure.ContinuePath();
     }
 }
