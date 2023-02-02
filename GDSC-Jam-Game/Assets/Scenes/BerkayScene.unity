@@ -427,6 +427,14 @@ PrefabInstance:
       propertyPath: _dices.Array.data[3]
       value: 
       objectReference: {fileID: 994775762}
+    - target: {fileID: 221373684470731648, guid: 22c76c779156f4d68ba3f53fa0548f30, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+    - target: {fileID: 221373684470731648, guid: 22c76c779156f4d68ba3f53fa0548f30, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22c76c779156f4d68ba3f53fa0548f30, type: 3}
 --- !u!114 &139558933 stripped
@@ -520,6 +528,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 767087536}
     m_Modifications:
+    - target: {fileID: 764725194359351774, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+    - target: {fileID: 764725194359351774, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
     - target: {fileID: 764725194554549192, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
       propertyPath: m_Name
       value: DialogueBox
@@ -628,6 +644,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 764725194791053195, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+    - target: {fileID: 764725194791053195, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+    - target: {fileID: 764725194994786252, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+    - target: {fileID: 764725194994786252, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60cf4494d9e97045388f7be5b3271bbe, type: 3}
 --- !u!1 &301146791
@@ -995,7 +1027,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1059,7 +1091,7 @@ MonoBehaviour:
   m_margin: {x: -255.26303, y: 0, z: 0, w: -78.368095}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &607801747
@@ -1481,6 +1513,14 @@ PrefabInstance:
     - target: {fileID: 3876639609634241179, guid: 197863b0fef3c03998163a8c643a6c0c, type: 3}
       propertyPath: m_Name
       value: DialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876639611632080825, guid: 197863b0fef3c03998163a8c643a6c0c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+    - target: {fileID: 3876639611632080825, guid: 197863b0fef3c03998163a8c643a6c0c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3876639611632080827, guid: 197863b0fef3c03998163a8c643a6c0c, type: 3}
       propertyPath: m_IsActive
@@ -2142,7 +2182,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Change Message
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2206,7 +2246,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1863330686
@@ -2815,7 +2855,7 @@ MonoBehaviour:
     nothing.\u201D \u201CBetween two evils, I always pick the one I never tried before.\u201D
     \u201CMan is the cruelest animal.\u201D\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2879,7 +2919,7 @@ MonoBehaviour:
   m_margin: {x: -255.26303, y: 0, z: 0, w: -78.368095}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &8202558566584971189
@@ -3059,7 +3099,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3123,7 +3163,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &8202558567093896631
@@ -3513,7 +3553,7 @@ MonoBehaviour:
 
     -King Kkadylma'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3577,7 +3617,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: -23.461365}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &8202558567573092542

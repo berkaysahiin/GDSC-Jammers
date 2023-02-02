@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
 
     public static void newGamePlay()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Story");
         
     }
 
