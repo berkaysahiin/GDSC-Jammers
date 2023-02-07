@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
         FigureFactory.instance.InstantiateFigure(new FigureInfo(playerSpawnPoint.position, FigureType.Player, 8));
 
 
-        StartCoroutine("SpawnBird");
+        StartCoroutine("SpawnBirds");
     }
 
 

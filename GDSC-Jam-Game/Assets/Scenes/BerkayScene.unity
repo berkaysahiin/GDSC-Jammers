@@ -1028,7 +1028,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1313,7 +1313,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &767087536
 RectTransform:
@@ -1538,7 +1538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1099084745410718179, guid: caf7e7e90e01c2b859263187a1269efa, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -93
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 1099084745410718179, guid: caf7e7e90e01c2b859263187a1269efa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1933,7 +1933,8 @@ MonoBehaviour:
   - {fileID: 89483702}
   - {fileID: 322773802}
   - {fileID: 1393390889}
-  enemyBirdSpawnPoints: []
+  enemyBirdSpawnPoints:
+  - {fileID: 797207521}
   playerSpawnPoint: {fileID: 1499353153}
 --- !u!23 &1301866567
 MeshRenderer:
@@ -2050,6 +2051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dices
       objectReference: {fileID: 0}
+    - target: {fileID: 550621282073896617, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 550621282073896618, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2105,6 +2110,22 @@ PrefabInstance:
     - target: {fileID: 550621282073896618, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 550621282446446676, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 550621283498218883, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 550621283637109647, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 550621284137029772, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0046c5223c40a9ed8aa19626444a15c4, type: 3}
@@ -2319,7 +2340,7 @@ MonoBehaviour:
   m_text: Change Message
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2571,7 +2592,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1985684309
 RectTransform:
@@ -2992,7 +3013,7 @@ MonoBehaviour:
     \u201CMan is the cruelest animal.\u201D\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3236,7 +3257,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3690,7 +3711,7 @@ MonoBehaviour:
     -King Kkadylma'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

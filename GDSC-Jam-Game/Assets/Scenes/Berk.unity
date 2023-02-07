@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hitler
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -766,8 +766,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -901,8 +901,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: BERK
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1522,8 +1522,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2018,8 +2018,8 @@ MonoBehaviour:
     He replied, ''Whether he is a sinner or not, I don''t know. One
     thing I do know. I was blind but now I see!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
-  m_sharedMaterial: {fileID: -5959480513134833276, guid: 7f86bc51a6a7393478a2653242f12e66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+  m_sharedMaterial: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

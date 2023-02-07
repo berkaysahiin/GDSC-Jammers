@@ -41,8 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5645168666652432127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022e21cbb5cfbdeb7bb297668150d3ac, type: 3}
+  m_Script: {fileID: 11500000, guid: b19fc5c0fd128a447b33bb0b7b039ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diceRollTest: {fileID: 0}
-  totalSum: {fileID: 0}
+  _dices: []
+  diceTotal: {fileID: 0}
+  diceCanvas: {fileID: 0}
