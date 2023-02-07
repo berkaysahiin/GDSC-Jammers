@@ -1456,6 +1456,14 @@ PrefabInstance:
       propertyPath: diceTotal
       value: 
       objectReference: {fileID: 1540439049}
+    - target: {fileID: 1099084745410718177, guid: caf7e7e90e01c2b859263187a1269efa, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949e8297575c548b68343af749b4cacc, type: 2}
+    - target: {fileID: 1099084745410718177, guid: caf7e7e90e01c2b859263187a1269efa, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5959480513134833276, guid: 949e8297575c548b68343af749b4cacc, type: 2}
     - target: {fileID: 1099084745410718178, guid: caf7e7e90e01c2b859263187a1269efa, type: 3}
       propertyPath: m_Name
       value: TotalValue
